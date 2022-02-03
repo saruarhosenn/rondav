@@ -305,6 +305,15 @@ Responsive Breakpoint
 		padding: 10rem 1.5rem 1.5rem;
 	}
 
+	/* 
+	===============================
+	Golden Girls Section Responsive
+	===============================
+	*/
+	.golden-girls-section {
+		padding-top: 50rem;
+	}
+
 }
 
 @media (max-width: 535px) {
@@ -424,6 +433,19 @@ Responsive Breakpoint
 	*/
 	:root {
 		--size-md: 2rem;
+	}
+
+}
+
+@media (max-width: 350px) {
+
+	/* 
+	===============================
+	Golden Girls Section Responsive
+	===============================
+	*/
+	.golden-girls-section {
+		padding-top: 55rem;
 	}
 
 }
