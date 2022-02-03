@@ -1,0 +1,307 @@
+/*
+=========================================
+Container Breakpoint
+=========================================
+*/
+@media (min-width:1600px) {
+
+	.container {
+		max-width: 1440px
+	}
+}
+
+/*
+=========================================
+Responsive Breakpoint
+=========================================
+*/
+@media (max-width: 1999px) {
+
+	/* 
+	================================
+	 Section Responsive
+	================================
+	*/
+
+}
+
+@media (max-width: 1799px) {
+
+	/* 
+	================================
+	 Section Responsive
+	================================
+	*/
+
+}
+
+@media (max-width: 1599px) {
+
+	/* 
+	===============================
+	 Section Responsive
+	===============================
+	*/
+
+}
+
+@media (max-width: 1399px) {
+
+	/* 
+	=====================================
+	Variables
+	=====================================
+	*/
+	:root {
+		--size-xxl: 5rem;
+		--size-md: 1.8rem;
+	}
+
+	/* 
+	===============================
+	Dollar Section Responsive
+	===============================
+	*/
+	.dollar-container {
+		top: -2rem;
+		padding-top: 22rem;
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+
+	.dollar-img img {
+		top: -28rem;
+	}
+
+	/* 
+	===============================
+	Golden Girls Section Responsive
+	===============================
+	*/
+	.golden-girls-section {
+		padding-top: 34rem;
+	}
+
+	/* 
+	===============================
+	Back to top Btn
+	===============================
+	*/
+	#scroll-up-btn {
+		width: 4rem;
+		height: 4rem;
+	}
+
+	#scroll-up-btn img {
+		width: 2rem;
+		height: 2rem;
+	}
+
+}
+
+@media (max-width: 1199px) {
+
+	/* 
+	===============================
+	 Section Responsive
+	===============================
+	*/
+
+}
+
+@media (max-width: 991px) {
+
+	/* 
+	=====================================
+	Variables
+	=====================================
+	*/
+	:root {
+		--size-md: 2.3rem;
+	}
+
+	/* 
+	=====================================
+	Reuseble Components
+	=====================================
+	*/
+	.column-spacing {
+		margin-right: -1.5rem;
+		margin-left: -1.5rem;
+	}
+	
+	.column-spacing > * {
+		padding-right: 1.5rem;
+		padding-left: 1.5rem;
+	}
+
+	/* 
+	===============================
+	Hero Responsive
+	===============================
+	*/
+	.hero-content .hero-text h1 span:first-child {
+		font-size: 6rem;
+	}
+
+	.hero-content .hero-text h1 span:last-child {
+		font-size: 4rem;
+	}
+
+	/* 
+	===============================
+	Dollar Section Responsive
+	===============================
+	*/
+	.dollar-section {
+		padding: 8rem 0;
+	}
+
+	.dollar-container {
+		position: static;
+		padding: 0;
+	}
+
+	.dollar-img img {
+		position: static;
+		margin-bottom: 4rem;
+	}
+
+	/* 
+	===============================
+	Golden Girls Section Responsive
+	===============================
+	*/
+	.golden-girls-section {
+		padding-top: 4rem;
+	}
+
+	.golden-girls-content :is(.golden-girls-top-text, .golden-girls-title, .golden-girls-desc) {
+		max-width: 100%;
+	}
+
+	/* 
+	===============================
+	Collection Section Responsive
+	===============================
+	*/
+	.collection-bottom-text.text-center.mx-auto.mt-90 {
+		margin-top: 5rem;
+	}
+
+	/* 
+	===============================
+	Question Section Responsive
+	===============================
+	*/
+	.question-btn {
+		margin: 7rem 0 5rem;
+	}
+
+	.question-bottom-text {
+		margin-top: 7rem;
+	}
+
+	/* 
+	===============================
+	Back to top Btn
+	===============================
+	*/
+	#scroll-up-btn {
+		width: 3.5rem;
+		height: 3.5rem;
+	}
+
+	#scroll-up-btn img {
+		width: 1.8rem;
+		height: 1.8rem;
+	}
+
+}
+
+@media (max-width: 767px) {
+
+	/* 
+	=====================================
+	Variables
+	=====================================
+	*/
+	:root {
+		--size-xxl: 4.5rem;
+		--size-lg: 2.5rem;
+		--size-md: 1.7rem;
+	}
+
+	/* 
+	===============================
+	Hero Responsive
+	===============================
+	*/
+	.hero-content .hero-text h1 span:first-child {
+		font-size: 4.6rem;
+	}
+
+	.hero-content .hero-text h1 span:last-child {
+		font-size: 3.4rem;
+	}
+
+	/* 
+	===============================
+	Note Desc Responsive
+	===============================
+	*/
+	.note-desc-img  {
+		overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+		height: 80rem;
+	}
+
+	.note-desc-img img {
+		height: 100%;
+	}
+
+}
+
+@media (max-width: 575px) {
+
+	/* 
+	=====================================
+	Variables
+	=====================================
+	*/
+	:root {
+		--size-xl: 3rem;
+		--size-lg: 2rem;
+		--size-md: 2.3rem;
+	}
+
+}
+
+
+@media (max-width: 500px) {
+
+	/* 
+	=====================================
+	Variables
+	=====================================
+	*/
+	:root {
+		--size-xxl: 4rem;
+	}
+
+}
+
+@media (max-width: 412px) {
+
+	/* 
+	=====================================
+	Variables
+	=====================================
+	*/
+	:root {
+		--size-xxl: 3.2rem;
+		--size-xl: 2.7rem;
+	}
+
+}
