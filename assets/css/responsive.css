@@ -1,3 +1,4 @@
+
 /*
 =========================================
 Container Breakpoint
@@ -129,8 +130,8 @@ Responsive Breakpoint
 		margin-right: -1.5rem;
 		margin-left: -1.5rem;
 	}
-	
-	.column-spacing > * {
+
+	.column-spacing>* {
 		padding-right: 1.5rem;
 		padding-left: 1.5rem;
 	}
@@ -250,10 +251,10 @@ Responsive Breakpoint
 	Note Desc Responsive
 	===============================
 	*/
-	.note-desc-img  {
+	.note-desc-img {
 		overflow-x: auto;
-        overflow-y: hidden;
-        white-space: nowrap;
+		overflow-y: hidden;
+		white-space: nowrap;
 		height: 80rem;
 	}
 
@@ -277,7 +278,6 @@ Responsive Breakpoint
 	}
 
 }
-
 
 @media (max-width: 500px) {
 

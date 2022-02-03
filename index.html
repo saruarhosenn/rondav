@@ -29,6 +29,19 @@
 
 <body>
 
+	<!-------- PRELOADER -------->
+	<div class="loader">
+		<div class="cube-wrapper">
+			<div class="cube-folding">
+				<span class="leaf1"></span>
+				<span class="leaf2"></span>
+				<span class="leaf3"></span>
+				<span class="leaf4"></span>
+			</div>
+		</div>
+	</div>
+	<!-------- PRELOADER -------->
+
 	<main>
 		<!-- 
 		  =====================================================
@@ -588,9 +601,12 @@
 	<script src="assets/js/aos.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script type="text/javascript">
-		/* ===== MENU SHOW & HIDE HUMBURGER BTN ===== */
-		function myFunction(x) {
-			x.classList.toggle("change");
+		/* ===== PRELOADER ===== */
+		var loader = document.querySelector(".loader")
+		window.addEventListener("load", vanish);
+
+		function vanish() {
+			loader.classList.add("disppear");
 		}
 
 		/* ===== SCROLL BACK TO TOP BTN ===== */

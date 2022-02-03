@@ -1,3 +1,4 @@
+
 /*
 --------------------------------------------
 --------------------------------------------
@@ -9,19 +10,6 @@
 --------------------------------------------
 */
 
-
-/*
--------------------------------------
--------------------------------------
-CSS Index
-
-01.
-02.
-03.
-04.
--------------------------------------
--------------------------------------
-*/
 
 /* 
 =====================================
@@ -182,7 +170,7 @@ Start Reuseble Components
 	margin-left: -4rem;
 }
 
-.column-spacing > * {
+.column-spacing>* {
 	padding-right: 4rem;
 	padding-left: 4rem;
 }
@@ -429,6 +417,7 @@ Start Collection Section
 .collection-bottom-text a:hover {
 	color: var(--primary-color);
 }
+
 /* 
 =========================================
 End Collection Section
@@ -493,12 +482,15 @@ Start Questions Section
 	font-size: 1.6rem;
 	font-family: 'Ubuntu-700';
 	color: #CFD3D7;
-	box-shadow: 0 0 0 transparent;
+	-webkit-box-shadow: 0 0 0 transparent;
+	        box-shadow: 0 0 0 transparent;
 }
+
 .accordion-btn:focus {
-    border-color: transparent;
-    outline: 0;
-    box-shadow: 0 0 0 transparent;
+	border-color: transparent;
+	outline: 0;
+	-webkit-box-shadow: 0 0 0 transparent;
+	        box-shadow: 0 0 0 transparent;
 }
 
 .accordion-button::after {
@@ -540,6 +532,7 @@ Start Questions Section
 	max-width: 87.4;
 	margin-top: 11rem;
 }
+
 /* 
 =========================================
 End Questions Section
@@ -616,5 +609,173 @@ Back to top Btn
 	100% {
 		right: 3rem;
 		bottom: 4rem;
+	}
+}
+
+
+/* 
+==============================
+PRELOADER
+==============================
+*/
+.loader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999999999;
+	background: var(--bg-color);
+	width: 100%;
+	height: 100vh;
+}
+
+.cube-wrapper {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.cube-folding {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	font-size: 0;
+}
+
+.cube-folding span {
+	position: relative;
+	width: 25px;
+	height: 25px;
+	-ms-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	display: inline-block;
+}
+
+.cube-folding span::before {
+	content: '';
+	background-color: var(--secondary-color);
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+	width: 25px;
+	height: 25px;
+	-ms-transform-origin: 100% 100%;
+	-webkit-transform-origin: 100% 100%;
+	transform-origin: 100% 100%;
+	-webkit-animation: folding 2.5s infinite linear both;
+	animation: folding 2.5s infinite linear both;
+}
+
+.cube-folding .leaf2 {
+	-ms-transform: rotateZ(90deg) scale(1.1);
+	-webkit-transform: rotateZ(90deg) scale(1.1);
+	transform: rotateZ(90deg) scale(1.1);
+}
+
+.cube-folding .leaf2::before {
+	-webkit-animation-delay: 0.3s;
+	animation-delay: 0.3s;
+	background-color: #f2f2f2;
+}
+
+.cube-folding .leaf3 {
+	-ms-transform: rotateZ(270deg) scale(1.1);
+	-webkit-transform: rotateZ(270deg) scale(1.1);
+	transform: rotateZ(270deg) scale(1.1);
+}
+
+.cube-folding .leaf3::before {
+	-webkit-animation-delay: 0.9s;
+	animation-delay: 0.9s;
+	background-color: #f2f2f2;
+}
+
+.cube-folding .leaf4 {
+	-ms-transform: rotateZ(180deg) scale(1.1);
+	-webkit-transform: rotateZ(180deg) scale(1.1);
+	transform: rotateZ(180deg) scale(1.1);
+}
+
+.cube-folding .leaf4::before {
+	-webkit-animation-delay: 0.6s;
+	animation-delay: 0.6s;
+	background-color: #e6e6e6;
+}
+
+@-webkit-keyframes folding {
+
+	0%,
+	10% {
+		-webkit-transform: perspective(140px) rotateX(-180deg);
+		transform: perspective(140px) rotateX(-180deg);
+		opacity: 0;
+	}
+
+	25%,
+	75% {
+		-webkit-transform: perspective(140px) rotateX(0deg);
+		transform: perspective(140px) rotateX(0deg);
+		opacity: 1;
+	}
+
+	90%,
+	100% {
+		-webkit-transform: perspective(140px) rotateY(180deg);
+		transform: perspective(140px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+@keyframes folding {
+
+	0%,
+	10% {
+		-ms-transform: perspective(140px) rotateX(-180deg);
+		-webkit-transform: perspective(140px) rotateX(-180deg);
+		transform: perspective(140px) rotateX(-180deg);
+		opacity: 0;
+	}
+
+	25%,
+	75% {
+		-ms-transform: perspective(140px) rotateX(0deg);
+		-webkit-transform: perspective(140px) rotateX(0deg);
+		transform: perspective(140px) rotateX(0deg);
+		opacity: 1;
+	}
+
+	90%,
+	100% {
+		-ms-transform: perspective(140px) rotateY(180deg);
+		-webkit-transform: perspective(140px) rotateY(180deg);
+		transform: perspective(140px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+.disppear {
+	-webkit-animation: vanish 1s forwards;
+	animation: vanish 1s forwards;
+}
+
+@-webkit-keyframes vanish {
+	100% {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+@keyframes vanish {
+	100% {
+		opacity: 0;
+		visibility: hidden;
 	}
 }
